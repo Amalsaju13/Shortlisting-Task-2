@@ -1,0 +1,15 @@
+# Node.js
+node_modules/
+package-lock.json
+.serverless/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Env file
+.env
+
+# VS Code
+.vscode/

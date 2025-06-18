@@ -1,0 +1,26 @@
+service: serverless-email-api
+
+frameworkVersion: '4'
+
+provider:
+  name: aws
+  runtime: python3.9
+  stage: dev
+  region: us-east-1
+
+  environment:
+    SMTP_SERVER: ${env:SMTP_SERVER}
+    SMTP_PORT: ${env:SMTP_PORT}
+    SENDER_EMAIL: ${env:SENDER_EMAIL}
+    SENDER_PASSWORD: ${env:SENDER_PASSWORD}
+
+functions:
+  sendEmail:
+    handler: handler.send_email
+    events:
+      - http:
+          path: send-email
+          method: post
+
+plugins:
+  - serverless-offline

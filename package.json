@@ -1,0 +1,8 @@
+{
+  "name": "serverless-email-api",
+  "version": "1.0.0",
+  "description": "Serverless email sender using Python",
+  "devDependencies": {
+    "serverless-offline": "^14.4.0"
+  }
+}
