@@ -56,9 +56,7 @@ Enable 2FA and generate it at: https://myaccount.google.com/apppasswords
 npx serverless offline
 
 Project Structure
-bash
-Copy
-Edit
+
 serverless-email-api/
 ├── handler.py         # Main Lambda function
 ├── serverless.yml     # Serverless Framework config
